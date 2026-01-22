@@ -6,8 +6,7 @@
 [![demo](https://img.shields.io/badge/Demo-Samples-orange.svg?logo=Github&style=for-the-badge)](https://swivid.github.io/Habibi/)
 ![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)
 [![lab](https://img.shields.io/badge/-X--LANCE-lightgrey?labelColor=grey&logo=leanpub&style=for-the-badge)](https://x-lance.sjtu.edu.cn/)
-[![lab](https://img.shields.io/badge/-SII-lightgrey?labelColor=grey&logo=leanpub&style=for-the-badge)](https://www.sii.edu.cn/)
-
+[![lab](https://img.shields.io/badge/-SII-lightgrey?labelColor=grey&logo=leanpub&style=for-the-badge)](https://www.sii.edu.cn/)    
 [![hfspace](https://img.shields.io/badge/-Online%20Experience-yellow?labelColor=grey&logo=huggingface&style=for-the-badge)](https://huggingface.co/spaces/chenxie95/Habibi-TTS)
 [![hfspace](https://img.shields.io/badge/-Benchmark-lightgrey?labelColor=grey&logo=huggingface&style=for-the-badge)](https://huggingface.co/datasets/SWivid/Habibi)
 [![hfspace](https://img.shields.io/badge/-Model%20Suite-lightgrey?labelColor=grey&logo=huggingface&style=for-the-badge)](https://huggingface.co/SWivid/Habibi-TTS)
