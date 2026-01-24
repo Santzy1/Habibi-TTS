@@ -1,3 +1,6 @@
+# ruff: noqa: E402
+# Above allows ruff to ignore E402: module level import not at top of file
+
 import json
 import os
 import re
@@ -14,17 +17,6 @@ import soundfile as sf
 import torch
 import torchaudio
 from cached_path import cached_path
-from f5_tts.infer.utils_infer import (
-    load_model,
-    load_vocoder,
-    preprocess_ref_audio_text,
-    remove_silence_for_generated_wav,
-    tempfile_kwargs,
-)
-from f5_tts.model import DiT
-
-from habibi_tts.infer.utils_infer import infer_process
-from habibi_tts.model.utils import dialect_id_map
 
 
 try:
@@ -40,6 +32,19 @@ def gpu_decorator(func):
         return spaces.GPU(func)
     else:
         return func
+
+
+from f5_tts.infer.utils_infer import (
+    load_model,
+    load_vocoder,
+    preprocess_ref_audio_text,
+    remove_silence_for_generated_wav,
+    tempfile_kwargs,
+)
+from f5_tts.model import DiT
+
+from habibi_tts.infer.utils_infer import infer_process
+from habibi_tts.model.utils import dialect_id_map
 
 
 vocoder = load_vocoder()
