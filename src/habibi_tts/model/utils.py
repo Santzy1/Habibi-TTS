@@ -1,18 +1,18 @@
 dialect_id_map = {
-    "MSA (Modern Standard Arabic)": "①",
-    "SAU (Najdi, Hijazi, Gulf, etc.)": "②",
-    "UAE (Emirati)": "③",
-    "ALG (Algerian & Algerian Saharan)": "④",
-    "IRQ (Mesopotamian & North Mesopotamian)": "⑤",
-    "EGY (Egyptian, Saidi, etc.)": "⑥",
-    "MAR (Moroccan or Darija)": "⑦",
-    "OMN (Omani, Dhofari, etc.)": "⑧",
-    "TUN (Tunisian)": "⑨",
-    "LEV (Levantine)": "⑩",
-    "SDN (Sudanese)": "⑪",
-    "LBY (Libyan)": "⑫",
-    "UNK (Unknown)": "⓪",
-}  # use by infer_gradio (w/ full name) and infer_cli (w/ first three letter)
+    "UNK": "⓪",
+    "MSA": "①",
+    "SAU": "②",
+    "UAE": "③",
+    "ALG": "④",
+    "IRQ": "⑤",
+    "EGY": "⑥",
+    "MAR": "⑦",
+    "OMN": "⑧",
+    "TUN": "⑨",
+    "LEV": "⑩",
+    "SDN": "⑪",
+    "LBY": "⑫",
+}  # use by infer_gradio and infer_cli
 
 
 def text_list_formatter(text_list, dialect_id=None):

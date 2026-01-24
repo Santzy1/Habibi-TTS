@@ -1,0 +1,12 @@
+# Unified | Specialized
+model = "Unified"
+# MSA | SAU | UAE | ALG | IRQ | EGY | IRQ | UNK
+dialect = "UNK"
+ref_audio = "assets/MSA.mp3"
+ref_text = "كان اللعيب حاضرًا في العديد من الأنشطة والفعاليات المرتبطة بكأس العالم، مما سمح للجماهير بالتفاعل معه والتقاط الصور التذكارية."
+gen_text = "أهلًا، يبدو أن هناك بعض التعقيدات، لكن لا تقلق، سأرشدك بطريقة سلسة وواضحة خطوة بخطوة."
+# File with text to generate. Ignores the text above.
+gen_file = ""
+remove_silence = false
+output_dir = "tests"
+output_file = "infer_cli_example.wav"

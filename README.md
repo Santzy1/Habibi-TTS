@@ -31,14 +31,30 @@ habibi-tts_infer-gradio
 
 ## CLI Usage
 ```bash
-# Single test with CLI
-# TODO
+# Default using the Unified model (recommanded)
+habibi-tts_infer-cli \
+--ref_audio "assets/MSA.mp3" \
+--ref_text "كان اللعيب حاضرًا في العديد من الأنشطة والفعاليات المرتبطة بكأس العالم، مما سمح للجماهير بالتفاعل معه والتقاط الصور التذكارية." \
+--gen_text "أهلًا، يبدو أن هناك بعض التعقيدات، لكن لا تقلق، سأرشدك بطريقة سلسة وواضحة خطوة بخطوة."
+
+# Assign the dialect ID, rather than inferred from given reference prompt (UNK, by default)
+# (best use matched dialectal content with ID: MSA, SAU, UAE, ALG, IRQ, EGY, IRQ, OMN, TUN, LEV, SDN, LBY)
+habibi-tts_infer-cli --dialect MSA
+
+# Alternatively, use `.toml` file to config, see `src/habibi_tts/infer/example.toml`
+habibi-tts_infer-cli -c YOUR_CUSTOM.toml
+
+# Check more CLI features with
+habibi-tts_infer-cli --help
 ```
+
+> [!NOTE]  
+> Some dialectal audio samples are provided under `src/habibi_tts/assets`, see the relevant [README.md](https://github.com/SWivid/Habibi-TTS/blob/main/src/habibi_tts/assets/README.md) for usage and more details.
 
 
 ## Benchmarking
 ```bash
-# TODO
+# SOON
 ```
 
 

@@ -277,7 +277,7 @@ def infer(
     if tts_model_choice == "Specialized":
         dialect_id = None
     elif tts_model_choice == "Unified":
-        dialect_id = dialect_id_map[tts_lang_choice]
+        dialect_id = dialect_id_map[tts_lang_choice[:3]]
     else:
         raise AttributeError(f"[Code infer_gradio.py] unexpected tts_model_choice {tts_model_choice}")
 

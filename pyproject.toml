@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "habibi-tts"
-version = "0.0.2"
+version = "0.0.3"
 description = "Habibi: Laying the Open-Source Foundation of Unified-Dialectal Arabic Speech Synthesis"
 readme = "README.md"
 license = {text = "MIT License"}
@@ -22,4 +22,5 @@ dependencies = [
 Homepage = "https://github.com/SWivid/Habibi-TTS"
 
 [project.scripts]
+"habibi-tts_infer-cli" = "habibi_tts.infer.infer_cli:main"
 "habibi-tts_infer-gradio" = "habibi_tts.infer.infer_gradio:main"
