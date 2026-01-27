@@ -23,14 +23,15 @@ def get_single_prompt(gen_dialect):
 
     if gen_dialect == "MSA":
         ref_text = "كان اللعيب حاضرًا في العديد من الأنشطة والفعاليات المرتبطة بكأس العالم، مما سمح للجماهير بالتفاعل معه والتقاط الصور التذكارية."
-    elif gen_dialect == "SAU":
+    elif gen_dialect[:3] == "SAU":
         if gen_dialect[4:] == "Najdi":
             ref_text = "تكفى طمني انا اليوم ماني بنايم ولا هو بداخل عيني النوم الين اتطمن عليه."
         elif gen_dialect[4:] == "Hijazi":
             ref_text = "ابغاك تحقق معاه بس بشكل ودي لانه سلطان يمر بظروف صعبة شوية."
         elif gen_dialect[4:] == "Gulf":
             ref_text = "وين تو الناس متى تصحى ومتى تفطر وتغير يبيلك ساعة يعني بالله تروح الشغل الساعة عشره."
-        raise ValueError(f"[Code utils_eval.py] unexpected gen_dialect: {gen_dialect}")
+        else:
+            raise ValueError(f"[Code utils_eval.py] unexpected gen_dialect: {gen_dialect}")
     elif gen_dialect == "UAE":
         ref_text = "قمنا نشتريها بشكل متكرر أو لما نلقى ستايل يعجبنا وحياناً هذا الستايل ما نحبه."
     elif gen_dialect == "ALG":
